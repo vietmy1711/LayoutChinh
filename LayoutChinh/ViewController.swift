@@ -47,6 +47,14 @@ class ViewController: UIViewController {
     var tapGesture2: UITapGestureRecognizer? = nil
     var tapGesture3: UITapGestureRecognizer? = nil
     
+    //Color
+    let backgroundColor = UIColor(red: 246/255, green: 246/255, blue: 246/255, alpha: 1)
+
+    let topColor = UIColor(red: 127/255, green: 127/255, blue: 127/255, alpha: 1)
+    
+    let entryColor = UIColor(red: 173/255, green: 171/255, blue: 171/255, alpha: 1)
+    
+    let overlayColor = UIColor(red: 78/255, green: 180/255, blue: 248/255, alpha: 1)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -62,19 +70,19 @@ class ViewController: UIViewController {
     //MARK: - Setup UI
     
     func setupUI() {
-        vwBackground.backgroundColor = UIColor(red: 246/255, green: 246/255, blue: 246/255, alpha: 1)
+        vwBackground.backgroundColor = backgroundColor
 
-        lblTitle.textColor = UIColor(red: 127/255, green: 127/255, blue: 127/255, alpha: 1)
-        lbl1.textColor = UIColor(red: 127/255, green: 127/255, blue: 127/255, alpha: 1)
+        lblTitle.textColor = topColor
+        lbl1.textColor = topColor
         
         //Entry
-        lblLeft1.textColor = UIColor(red: 173/255, green: 171/255, blue: 171/255, alpha: 1)
-        lblRight1.textColor = UIColor(red: 173/255, green: 171/255, blue: 171/255, alpha: 1)
+        lblLeft1.textColor = entryColor
+        lblRight1.textColor = entryColor
         
-        lblLeft2.textColor = UIColor(red: 173/255, green: 171/255, blue: 171/255, alpha: 1)
-        lblRight2.textColor = UIColor(red: 173/255, green: 171/255, blue: 171/255, alpha: 1)
+        lblLeft2.textColor = entryColor
+        lblRight2.textColor = entryColor
         
-        lblLeft3.textColor = UIColor(red: 173/255, green: 171/255, blue: 171/255, alpha: 1)
+        lblLeft3.textColor = entryColor
         
         //Button
         btn.layer.masksToBounds = true
@@ -93,15 +101,15 @@ class ViewController: UIViewController {
         btn.layer.addSublayer(gradientLayer)
         
         //View Entry Overlay
-        vwEntryOverlay1.backgroundColor = UIColor(red: 78/255, green: 180/255, blue: 248/255, alpha: 1)
+        vwEntryOverlay1.backgroundColor = overlayColor
         vwEntryOverlay1.layer.opacity = 0
         vwEntryOverlay1.isUserInteractionEnabled = false
         
-        vwEntryOverlay2.backgroundColor = UIColor(red: 78/255, green: 180/255, blue: 248/255, alpha: 1)
+        vwEntryOverlay2.backgroundColor = overlayColor
         vwEntryOverlay2.layer.opacity = 0
         vwEntryOverlay2.isUserInteractionEnabled = false
         
-        vwEntryOverlay3.backgroundColor = UIColor(red: 78/255, green: 180/255, blue: 248/255, alpha: 1)
+        vwEntryOverlay3.backgroundColor = overlayColor
         vwEntryOverlay3.layer.opacity = 0
         vwEntryOverlay3.isUserInteractionEnabled = false
         
@@ -169,4 +177,8 @@ extension ViewController: UITextFieldDelegate {
         }
         return true
     }
+}
+
+extension UIColor {
+    
 }
