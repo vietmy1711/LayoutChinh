@@ -28,11 +28,6 @@
                 <outlet property="vwEntryOverlay1" destination="VN2-cY-GVi" id="0uF-3I-5iD"/>
                 <outlet property="vwEntryOverlay2" destination="2K4-Tj-XHA" id="XlM-e8-XJA"/>
                 <outlet property="vwEntryOverlay3" destination="6vA-N8-PT0" id="m5s-ot-MGh"/>
-                <outlet property="vwSeperator1" destination="wUc-bw-0Nm" id="Ctc-vr-pac"/>
-                <outlet property="vwSeperator2" destination="Z2K-Dn-yaz" id="LSc-gS-SdW"/>
-                <outlet property="vwSeperator3" destination="QW9-iw-PEY" id="lac-en-Wi2"/>
-                <outlet property="vwSeperator4" destination="S4c-Rq-Cmp" id="TEE-Mc-kVL"/>
-                <outlet property="vwSeperator5" destination="y9Z-Rc-yYc" id="QeN-2X-Dip"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -53,7 +48,7 @@
                         </label>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wUc-bw-0Nm">
                             <rect key="frame" x="0.0" y="44.5" width="414" height="1"/>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <color key="backgroundColor" systemColor="systemGray4Color" red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="1" id="SkY-TI-7A2"/>
                             </constraints>
@@ -68,7 +63,7 @@
                         </label>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z2K-Dn-yaz">
                             <rect key="frame" x="16" y="131.5" width="382" height="1"/>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <color key="backgroundColor" systemColor="systemGray4Color" red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="1" id="v15-lD-j5y"/>
                             </constraints>
@@ -122,7 +117,7 @@
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QW9-iw-PEY">
                             <rect key="frame" x="12" y="209.5" width="390" height="1"/>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <color key="backgroundColor" systemColor="systemGray4Color" red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="1" id="CcG-EP-l5J"/>
                             </constraints>
@@ -176,7 +171,7 @@
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S4c-Rq-Cmp">
                             <rect key="frame" x="12" y="286.5" width="390" height="1"/>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <color key="backgroundColor" systemColor="systemGray4Color" red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="1" id="1oE-FI-iNb"/>
                             </constraints>
@@ -222,7 +217,7 @@
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y9Z-Rc-yYc">
                             <rect key="frame" x="12" y="363.5" width="390" height="1"/>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <color key="backgroundColor" systemColor="systemGray4Color" red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="1" id="kf6-cJ-bf0"/>
                             </constraints>

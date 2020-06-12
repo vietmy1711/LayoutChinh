@@ -15,13 +15,6 @@ class ViewController: UIViewController {
     //Background
     @IBOutlet var vwBackground: UIView!
     
-    //Seperator
-    @IBOutlet weak var vwSeperator1: UIView!
-    @IBOutlet weak var vwSeperator2: UIView!
-    @IBOutlet weak var vwSeperator3: UIView!
-    @IBOutlet weak var vwSeperator4: UIView!
-    @IBOutlet weak var vwSeperator5: UIView!
-    
     @IBOutlet weak var lblTitle: UILabel!
     @IBOutlet weak var lbl1: UILabel!
     
@@ -70,13 +63,7 @@ class ViewController: UIViewController {
     
     func setupUI() {
         vwBackground.backgroundColor = UIColor(red: 246/255, green: 246/255, blue: 246/255, alpha: 1)
-        
-        vwSeperator1.backgroundColor = UIColor(red: 227/255, green: 227/255, blue: 227/255, alpha: 1)
-        vwSeperator2.backgroundColor = UIColor(red: 227/255, green: 227/255, blue: 227/255, alpha: 1)
-        vwSeperator3.backgroundColor = UIColor(red: 227/255, green: 227/255, blue: 227/255, alpha: 1)
-        vwSeperator4.backgroundColor = UIColor(red: 227/255, green: 227/255, blue: 227/255, alpha: 1)
-        vwSeperator5.backgroundColor = UIColor(red: 227/255, green: 227/255, blue: 227/255, alpha: 1)
-        
+
         lblTitle.textColor = UIColor(red: 127/255, green: 127/255, blue: 127/255, alpha: 1)
         lbl1.textColor = UIColor(red: 127/255, green: 127/255, blue: 127/255, alpha: 1)
         
@@ -135,9 +122,7 @@ class ViewController: UIViewController {
     
     @objc func viewEntryContainerOnClick(_ sender:UITapGestureRecognizer) {
         
-        vwEntryOverlay1.layer.opacity = 0
-        vwEntryOverlay2.layer.opacity = 0
-        vwEntryOverlay3.layer.opacity = 0
+        hideOverlay()
         
         switch sender {
         case tapGesture1:
@@ -160,16 +145,20 @@ class ViewController: UIViewController {
     @objc func hideKeyboard() {
         view.endEditing(true)
     }
+    
+    //Change Overlay Opacity to 0
+    func hideOverlay() {
+        vwEntryOverlay1.layer.opacity = 0
+        vwEntryOverlay2.layer.opacity = 0
+        vwEntryOverlay3.layer.opacity = 0
+    }
 }
 
 //MARK: - TextField Delegate
 
 extension ViewController: UITextFieldDelegate {
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
-        vwEntryOverlay1.layer.opacity = 0
-        vwEntryOverlay2.layer.opacity = 0
-        vwEntryOverlay3.layer.opacity = 0
-        
+        hideOverlay()
         switch textField {
         case txf1:
             vwEntryOverlay1.layer.opacity = 0.3
